@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="theme light EHoceA">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <base href=".">
+  <title>Hola Marineta 💖</title>
+  <meta name="app-name" content="export_website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./styles/a0684b0780c739e9.vendor.ltr.css" rel="stylesheet">
+  <link href="./styles/7f8275897d4f5104.ltr.css" rel="stylesheet">
+  <link href="./styles/static_font_4.ltr.css" rel="stylesheet">
+  <link href="./scripts/215fd60577ea59db.strings.js" rel="preload" as="script">
+  <link href="./scripts/cb3ba0b63ca8365b.en.js" rel="preload" as="script">
+  <link href="./scripts/791c366b627fac4e.runtime.js" rel="preload" as="script">
+  <link href="./scripts/45caf03d8dd32c14.vendor.js" rel="preload" as="script">
+  <link href="./scripts/031f31d6d60d1a1e.vendor.js" rel="preload" as="script">
+  <link href="./scripts/23753544da793c49.js" rel="preload" as="script">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:title" content="Hola Marineta 💖">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="./images/2d0b56e7e51cf11036ad8734bdb67e2d.png">
+  <link rel="icon" href="./images/e53c4bd8da5e491d9ab09e7cf0daf874.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="./images/725b756a69a7d4c235070e51acd85560.png" sizes="180x180">
+  <script>
+    document.addEventListener('contextmenu', (e) => {
+      const isMedia = ['img', 'image', 'video', 'svg', 'picture'].some(
+        tagName => tagName.localeCompare(e.target.tagName, undefined, { sensitivity: 'base' }) === 0,
+      );
+      isMedia && e.preventDefault();
+    });
+  </script>
+  <script>
+    const lang = navigator.language ? navigator.language : 'en';
+    window.canva_installFooter = (container) => {
+      if (!(container instanceof HTMLDivElement)) {
+        return;
+      }
+      fetch('_footer?lang=' + encodeURIComponent(lang)).then(response => {
+        if (response.status !== 200) {
+          return;
+        }
+        response.text().then(footerStr => {
+          const div = document.createElement('div');
+          div.innerHTML = footerStr;
+          for (const child of [...div.children]) {
+            if (child.tagName.toLowerCase() !== 'script') {
+              container.append(child);
+            }
+          }
+        });
+      });
+    };
+  </script>
+</head>
+<body>
+  <img src="./media/photos/example.jpg" alt="Example Image">
+  <video src="./media/videos/example.mp4" controls></video>
+  <audio src="./media/music/background.mp3" autoplay loop></audio>
+</body>
+</html>
